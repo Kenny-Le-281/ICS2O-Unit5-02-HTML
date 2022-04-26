@@ -11,14 +11,14 @@ if (navigator.serviceWorker) {
   })
 }
 
-'use strict'
+;("use strict")
 
 /**
  * This function displays an alert.
  */
 function check() {
   // input
-  const integer = parseFloat(document.getElementById('integer').value)
+  const integer = parseFloat(document.getElementById("integer").value)
 
   // process and output
   if (integer > 0) {
