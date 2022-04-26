@@ -11,9 +11,19 @@ if (navigator.serviceWorker) {
   })
 }
 
+'use strict'
+
 /**
  * This function displays an alert.
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+function check() {
+  // input
+  const integer = parseFloat(document.getElementById('integer').value)
+
+  // process and output
+  if (integer > 0) {
+    document.getElementById("answer").innerHTML = "Your number is positive!"
+  } else {
+    document.getElementById("answer").innerHTML = "Your number is negative!"
+  }
 }
